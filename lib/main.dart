@@ -90,10 +90,20 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )),
       Container(
-        height: 188,
-        width: 361,
-        color: Colors.amber,
-      ),
+          height: 188,
+          width: 361,
+          decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(25)),
+              color: Color.fromARGB(255, 158, 141, 141)),
+          margin: const EdgeInsets.all(20),
+          padding: const EdgeInsets.fromLTRB(30, 10, 0, 0),
+          child: const Text('Drinks',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.normal,
+                fontSize: 36,
+                color: Color.fromARGB(255, 244, 146, 54),
+              )))
     ]));
   }
 }
