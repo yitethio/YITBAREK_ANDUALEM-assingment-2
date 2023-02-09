@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -63,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Positioned(
                   top: 295,
                   left: 17,
-                  child: Text('About',
+                  child: Text('ABOUT',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontStyle: FontStyle.normal,
@@ -105,6 +106,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 36,
                 color: Color.fromARGB(255, 244, 146, 54),
               ))),
+      Padding(
+        padding: const EdgeInsets.fromLTRB(12, 34, 0, 0),
+        child: ElevatedButton(
+          style: buttonPrimary,
+          onPressed: () {},
+          child: const Text('Order',
+              style: TextStyle(
+                  fontWeight: FontWeight.normal,
+                  fontStyle: FontStyle.normal,
+                  fontSize: 24,
+                  color: Color.fromARGB(255, 255, 255, 255))),
+        ),
+      )
     ]));
   }
 }
