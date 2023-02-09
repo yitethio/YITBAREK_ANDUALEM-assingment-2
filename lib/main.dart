@@ -93,8 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
           height: 188,
           width: 361,
           decoration: const BoxDecoration(
+              boxShadow: [BoxShadow(blurRadius: 20.0, offset: Offset(10, 10))],
               borderRadius: BorderRadius.all(Radius.circular(25)),
-              color: Color.fromARGB(255, 158, 141, 141)),
+              color: Color.fromARGB(255, 255, 255, 255)),
           margin: const EdgeInsets.all(20),
           padding: const EdgeInsets.fromLTRB(30, 10, 0, 0),
           child: const Text('Drinks',
@@ -103,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontStyle: FontStyle.normal,
                 fontSize: 36,
                 color: Color.fromARGB(255, 244, 146, 54),
-              )))
+              ))),
     ]));
   }
 }
